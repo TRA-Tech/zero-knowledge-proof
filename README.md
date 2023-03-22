@@ -1,10 +1,11 @@
-## ZERO KNOWLEDGE
+# ZERO KNOWLEDGE
 **Zero Knowledge**, ilk olarak 1980 yılında MIT araştırmacıları Shafi Goldwasser, Silvio Micali ve Charles Rackoff tarafından ortaya çıkmıştır. Araştırmacılar, *İnteraktif Kanıtlama Sistemleri* üzerinde çalışmalar sürdürürken, birinci taraf **Prover** ve mesajı doğrulayan taraf **Verifier** arasındaki ilişkiyi tanımlayacak teorik çalışmalar yürütmüşlerdir. 
+
 
 ![image](https://user-images.githubusercontent.com/123966022/226599025-82affff6-cf38-4f89-8317-8a9405ac880c.png)
 
 
-### Zero Knowledge Nedir? 
+## Zero Knowledge Nedir? 
 
 **Zero Knowledge (sıfır bilgi kanıtı)** kavramı, birisinin başka birine bir şeyi kanıtlaması gerektiğinde, kanıtlayan kişinin açıklamalarını, bilgi ve verilerini ifşa etmeden yapabileceği bir yöntemi ifade eder. Bu, güvenli ve gizli bilgi işlemlerinde, özellikle de kriptografi ve veri gizliliği konularında kullanılan bir tekniktir. Blockchain'de, zero knowledge protokolü, işlem gizliliği ve anonimliğini artırmak için kullanılır.
 
@@ -56,7 +57,7 @@ Sıfır bilgi kanıt protokolü, kanıtlayan ve kanıtı doğrulayan taraf aras�
 
 ![image](https://user-images.githubusercontent.com/123966022/226828348-67d027e9-c676-428d-b5e1-068952622752.png)
 
-### Zero Knowledge Soyut Örnek
+## Zero Knowledge Soyut Örnek
 
 X kişisinin *renk körü* olduğunu ve *iki adet kırmızı ve yeşil renklerde topunuz* olduğunu düşünün. X kişisine göre toplar tamamen aynı renk görünüyor ancak topların ayırt edilebileceğinden şüpheleniyor. Bu kişiye topların farklı renklerde olduğunu kanıtlamak istiyorsunuz ancak topların hangisinin kırmızı hangisinin yeşil renk olduğunu açıklamak istemiyorsunuz. 
 
@@ -71,21 +72,21 @@ Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğ
 
 Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
 
-### Zero Knowledge (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
+## Zero Knowledge (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
 
-#### Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
+### Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
 Etkileşimli sıfır bilgi kanıtlarında, kanıtlayan ve doğrulan taraflar birkaç kez etkileşime girerler. Doğrulayıcı, ispat edene kadar sorular sorarak kanıtlayana meydan okur. Bu teknoloji, bir kullanıcının bir iddiada bulunmasını ve bu iddiayı kanıtlamasını sağlar, ancak kanıtlayan kişi iddiasının ne olduğunu açıklamaz. 
 
 Örneğin, bir kullanıcının bir şifre ya da kimlik bilgisi hakkında bilgi sahibi olduğunu kanıtlaması gerektiğinde kullanılabilir.
 
 Bu teknoloji, özellikle blok zinciri teknolojileri gibi güvenliğin önemli olduğu alanlarda kullanılır. Etkileşimli sıfır bilgi kanıtları, kullanıcının gizliliğini korurken, güvenilirlik ve doğruluk sağlamak için kullanılabilir.
 
-#### Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
+### Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
 Bir kullanıcının bir iddiada bulunmasını ve iddiasını kanıtlamasını sağlayan, ancak kullanıcının doğrudan bir kanıt sunmasına gerek kalmadan yapabilen bir kriptografik protokol türüdür. Bu protokoller, özellikle veri gizliliği ve kimlik doğrulama gibi alanlarda kullanılabilir. Etkileşimsiz sıfır bilgi kanıtlarında, kanıtlayan ve doğrulayan taraflar etkileşime geçmezler. Doğrulayıcı tarafından belirli bir zamanda yalnızca bir kez doğrulanabilir. Etkileşimsiz sıfır bilgi kanıtları, etkileşimli sıfır bilgi kanıtlarına göre daha fazla hesaplama gücü gerektirmektedir. 
 
 Etkileşimsiz sıfır bilgi kanıtları, blok zinciri teknolojileri gibi alanlarda kullanılan dijital para birimleri ve kimlik doğrulama gibi alanlarda kullanışlıdır. Örneğin, bir kullanıcının bir işlemin geçerli olduğunu kanıtlaması gerektiğinde veya bir kullanıcının kimliğinin doğruluğunu kanıtlaması gerektiğinde kullanılabilir. Bu teknoloji, kullanıcıların gizliliğini korurken, doğruluk ve güvenilirlik sağlamak için kullanılabilir.
 
-#### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
+### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
 zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Bu teknoloji, kullanıcının bir iddiayı doğrulamasına olanak tanıyan öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür. Bir kullanıcının bir iddiayı doğrulaması için sadece bir kanıt sunması yeterlidir ve bu kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir. Özellikle blok zinciri teknolojileri ve kriptoparalar gibi alanlarda kullanılır.
 
 > SNARK = **S**uccinct **N**on-interactive **AR**guments of **K**nowledge
@@ -95,12 +96,7 @@ zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 ![image](https://user-images.githubusercontent.com/123966022/226885106-9669f0b6-c253-4e78-befa-7b7689dbfaf6.png)
 
 
-
-
-
-
-
-#### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
+### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
 zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
 zk-STARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Kanıtın boyutu, verilerin boyutundan bağımsızdır ve sonuç olarak kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir.
 
@@ -117,6 +113,20 @@ zk-STARK hash fonksiyonu kullandığı ve güvenilmez bir kanıt modeli tercih e
 
 ![image](https://user-images.githubusercontent.com/123966022/226896399-56e0f821-8d53-4298-981d-ac983522bd98.png)
 
+## Sıfır Bilgi Kanıtlarının Kullanım ve Uygulama Alanları 
+
+- **Blockchain:** 
+Bitcoin ve Ethereum gibi halka açık blokzincirlerinin şeffaflığı, işlemleri kamuya açık ve doğrulanmasını mümkün kılar. Ancak bu durum daha az mahremiyet anlamına gelir ve kullanıcıların anonimleştirilmesine yol açabilir. 
+Zero Knowledge bu bağlamda kamuya açık blok zincirlerine daha fazla gizlilik kazandırabilir. Örneğin, Zcash kripto para birimi, Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARK) adlı bir zero-knowledge yöntemine dayanmaktadır. Ayrıca Ethereum blok zincirinde kullanılan ve ölçeklenebilirlik ve gizlilik sağlayan Zero-Knowledge Scalable Transparent Argument of Knowledge (zk-STARK) yöntemidir.
+
+- **Finans:** 
+ING, müşterilerinin gizli numaralarını belirli bir aralıklarda doğruluğunu kanıtlayabilecekleri ZKPs yöntemi kullanıyor. Örnek vermek gerekirse, konut kredisi almak için başvuru yapan kişi net maaş bilgisini paylaşmadan kredi almaya uygun olduğunu kanıtlayabilir. 
+
+- **Kimlik Doğrulama:** 
+Sıfır bilgi kanıtı, şifre gibi gizli ve kişisel verileri değiştirmeden kullanıcıların kimlik bilgilerini doğrulamalarını sağlayabilir. 
+
+- **Makine Öğrenimi:**
+ZKP'ler, bir makine öğrenimi algoritmasının sahibinin model hakkında herhangi bir bilgi açıklamadan diğerlerine model sonuçları hakkında ikna etmesine olanak tanıyabilir.
 
 
 
