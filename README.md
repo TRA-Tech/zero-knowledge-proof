@@ -22,8 +22,31 @@ Sıfır bilgi kanıtı, her türlü verinin geçerliliğini kanıtlayabilir. Bu 
 - **Gizlilik**: Girdiler, ispatlayan taraf harici kimseyle paylaşılmaz 
 
 
+Zero Knowledge (sıfır bilgi kanıtı), kanıtlayan taraf ve kanıtı doğrulayan taraf arasında etkileşim yaratır. Haricinde etkileşim olmayan sıfır bilgi kanıtları da bulunmaktadır, bunun en yaygın örneği Fiat-Shamir yöntemine dayanır ve bu yöntem etkileşimli bir şemadan oluşmaktadır. 
 
+Sıfır bilgi kanıt protokolü, kanıtlayan ve kanıtı doğrulayan taraf arasındaki etkileşimi transkript şeklinde sunar. 
 
+İspat geçerlilikleri hesaplama varsayımlarına yani kriptografik hash fonksiyonlarına dayanmaktadır. Hash fonksiyonu, verinin bütünlüğünü sağlamak için kullanılan yöntemlerden biridir. 
+
+**Hash Fonsiyonu örneği:**
+
+![image](https://user-images.githubusercontent.com/123966022/226828348-67d027e9-c676-428d-b5e1-068952622752.png)
+
+### Zero Knowledge Soyut Örnek
+
+X kişisinin *renk körü* olduğunu ve *iki adet kırmızı ve yeşil renklerde topunuz* olduğunu düşünün. X kişisine göre toplar tamamen aynı renk görünüyor ancak topların ayırt edilebileceğinden şüpheleniyor. Bu kişiye topların farklı renklerde olduğunu kanıtlamak istiyorsunuz ancak topların hangisinin kırmızı hangisinin yeşil renk olduğunu açıklamak istemiyorsunuz. 
+
+İspat sistemi şu şekilde işliyor; X kişisi topları alıyor ve arkasına saklıyor. Sonrasında toplardan birini alıyor ve size gösteriyor. Daha sonrasında tekrardan arkasına saklıyor ve tekrardan bir topu gösteriyor. İki toptan birini seçme işlemi eşit olasılıkta gerçekleşiyor. Size sadece topu değiştirip değiştirmediğini sorar, tüm bu olay döngüsünü gerektiği sıklıkta tekrarlanabilir. 
+Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğini kesinlikle söyleyebilirsiniz. Ancak toplar aynı renkteyse ve ayırt edilemiyorsa, %50 yüksek olasılıkla tahmin etmeniz pek mümkün değil. 
+
+- Her ihtimali belirlemede rastgele başarı olasılığınız %50 ve tüm ihtimali belirleme olasılığınız sıfıra yakın. **(Sağlamlık)**
+-	X kişisi ve siz, ispat işlemini birçok kez tekrarlarsanız, X kişisi topların gerçekten de farklı olduğuna ikna olacaktır. **(Bütünlük)**
+
+Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
+
+### Zero Knowledge(Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
+-	Etkileşimli Sıfır Bilgi Kanıtları: Etkileşimli sıfır bilgi kanıtlarında, kanıtlayan ve doğrulan taraflar birkaç kez etkileşime girerler. Doğrulayıcı, ispat edene kadar sorular sorarak kanıtlayana meydan okur. 
+-	Etkileşimsiz Bıfır Bilgi Kanıtları: Etkileşimsiz sıfır bilgi kanıtlarında, kanıtlayan ve doğrulayan taraflar etkileşime geçmezler. Doğrulayıcı tarafından belirli bir zamanda yalnızca bir kez doğrulanabilir. Etkileşimsiz sıfır bilgi kanıtları, etkileşimli sıfır bilgi kanıtlarına göre daha fazla hesaplama gücü gerektirmektedir. 
 
 
 
