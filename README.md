@@ -84,6 +84,8 @@ zk-STARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 
 zk-STARK'ın blok zincirleri gibi alanlarda kullanılabilmesi, özellikle anonimlik ve güvenlik gibi konularda avantaj sağlar. Ancak, zk-STARK'ın uygulanması oldukça karmaşık olabilir ve doğruluğunun, gizliliğinin ve güvenliğinin sağlanması için dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir. 
 
+> STARK = **S**uccinct (**S**calable) **T**ransparent **AR**guments of **K**nowledge
+
 Aşağıdaki tabloda zk-SNARK ve zk-STARK teknolojileri arasındaki farkları görebilirsiniz: 
 
 ![image](https://user-images.githubusercontent.com/123966022/226895926-6fd963f2-c26c-4dc1-937d-49c0dcb0ed88.png)
