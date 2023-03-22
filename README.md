@@ -8,12 +8,14 @@
 
 **Zero Knowledge (sıfır bilgi kanıtı)** kavramı, birisinin başka birine bir şeyi kanıtlaması gerektiğinde, kanıtlayan kişinin açıklamalarını, bilgi ve verilerini ifşa etmeden yapabileceği bir yöntemi ifade eder. Bu, güvenli ve gizli bilgi işlemlerinde, özellikle de kriptografi ve veri gizliliği konularında kullanılan bir tekniktir. Blockchain'de, zero knowledge protokolü, işlem gizliliği ve anonimliğini artırmak için kullanılır.
 
-Sıfır bilgi kanıtı, bilgilerin sadece ispatlayan tarafından gizliliği korunduğu özel durumlardan oluşmaktadır.Finansal işlemler, kimlik doğrulama ve veri paylaşımı gibi alanlarda da kullanılır. Örneğin, bir kullanıcının banka hesap bilgilerini doğrulamak istediği bir senaryoda, zero knowledge protokolü, kullanıcının hesap bilgilerini açıklamadan, yalnızca hesabın doğruluğunu doğrulamak için gerekli olan bilgileri sağlamasına izin verebilir.
+Sıfır bilgi kanıtı, bilgilerin sadece ispatlayan tarafından gizliliği korunduğu özel durumlardan oluşmaktadır. Finansal işlemler, kimlik doğrulama ve veri paylaşımı gibi alanlarda da kullanılır. Örneğin, bir kullanıcının banka hesap bilgilerini doğrulamak istediği bir senaryoda, zero knowledge protokolü, kullanıcının hesap bilgilerini açıklamadan, yalnızca hesabın doğruluğunu doğrulamak için gerekli olan bilgileri sağlamasına izin verebilir.
 
 Zero Knowledge; bir şeyin gerçeğini, o gerçeği nasıl bildiğinizi ya da o gerçeğe dair bildiğiniz şeyleri paylaşmadan doğrulamanıza olanak sağlar. Sıfır bilgi kanıtları, girdi verilerini “doğru” ya da “yanlış” olarak çıktı olarak sunan bir algoritmaya dayanır. 
 Sıfır bilgi kanıtı, her türlü verinin geçerliliğini kanıtlayabilir. Bu duruma kişisel veriler dahildir. 
 
 ![image](https://user-images.githubusercontent.com/123966022/226602614-1dcd134d-0f47-4fe5-9006-9572d947da13.png)
+
+> Bunu daha somut bir şekilde düşünebiliriz; `C` olarak gösterilen bir programın iki girdisi olduğunu varsayalım: `C(x, w)`. Burada `x` halka açık olan girdi, `w` ise gizli şahit girdisidir. Programın çıktısı boolean yani ya `doğru` ya da `yanlış`. Amaç, belirli bir halka açık girdi `x` verildiğinde, ispatlayıcı bir gizli girdi `w` bildiğini ve `C(x,w) == true` olduğunu kanıtlamaktır.
 
 
 **Zero Knowledge için üç temel özellik mevcuttur:** 
@@ -64,9 +66,17 @@ Etkileşimsiz sıfır bilgi kanıtları, blok zinciri teknolojileri gibi alanlar
 #### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
 zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Bu teknoloji, kullanıcının bir iddiayı doğrulamasına olanak tanıyan öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür. Bir kullanıcının bir iddiayı doğrulaması için sadece bir kanıt sunması yeterlidir ve bu kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir. Özellikle blok zinciri teknolojileri ve kriptoparalar gibi alanlarda kullanılır.
 
+> SNARK = **S**uccinct **N**on-interactive **AR**guments of **K**nowledge
+
 Örneğin, kripto para birimleri gibi işlemlerin doğrulanması ve anonimliği sağlamak için kullanılabilir. Ancak, zk-SNARK'ın doğru bir şekilde kullanılması için, gizlilik, güvenlik ve doğruluk konularında dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir.
 
 ![image](https://user-images.githubusercontent.com/123966022/226885106-9669f0b6-c253-4e78-befa-7b7689dbfaf6.png)
+
+
+
+
+
+
 
 #### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
 zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
