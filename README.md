@@ -39,14 +39,42 @@ X kişisinin *renk körü* olduğunu ve *iki adet kırmızı ve yeşil renklerde
 İspat sistemi şu şekilde işliyor; X kişisi topları alıyor ve arkasına saklıyor. Sonrasında toplardan birini alıyor ve size gösteriyor. Daha sonrasında tekrardan arkasına saklıyor ve tekrardan bir topu gösteriyor. İki toptan birini seçme işlemi eşit olasılıkta gerçekleşiyor. Size sadece topu değiştirip değiştirmediğini sorar, tüm bu olay döngüsünü gerektiği sıklıkta tekrarlanabilir. 
 Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğini kesinlikle söyleyebilirsiniz. Ancak toplar aynı renkteyse ve ayırt edilemiyorsa, %50 yüksek olasılıkla tahmin etmeniz pek mümkün değil. 
 
+![image](https://user-images.githubusercontent.com/123966022/226885221-820edcac-980c-4ff6-8491-68823db36ac7.png)
+
+
 - Her ihtimali belirlemede rastgele başarı olasılığınız %50 ve tüm ihtimali belirleme olasılığınız sıfıra yakın. **(Sağlamlık)**
 -	X kişisi ve siz, ispat işlemini birçok kez tekrarlarsanız, X kişisi topların gerçekten de farklı olduğuna ikna olacaktır. **(Bütünlük)**
 
 Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
 
-### Zero Knowledge(Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
--	Etkileşimli Sıfır Bilgi Kanıtları: Etkileşimli sıfır bilgi kanıtlarında, kanıtlayan ve doğrulan taraflar birkaç kez etkileşime girerler. Doğrulayıcı, ispat edene kadar sorular sorarak kanıtlayana meydan okur. 
--	Etkileşimsiz Bıfır Bilgi Kanıtları: Etkileşimsiz sıfır bilgi kanıtlarında, kanıtlayan ve doğrulayan taraflar etkileşime geçmezler. Doğrulayıcı tarafından belirli bir zamanda yalnızca bir kez doğrulanabilir. Etkileşimsiz sıfır bilgi kanıtları, etkileşimli sıfır bilgi kanıtlarına göre daha fazla hesaplama gücü gerektirmektedir. 
+### Zero Knowledge (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
+
+#### Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
+Etkileşimli sıfır bilgi kanıtlarında, kanıtlayan ve doğrulan taraflar birkaç kez etkileşime girerler. Doğrulayıcı, ispat edene kadar sorular sorarak kanıtlayana meydan okur. Bu teknoloji, bir kullanıcının bir iddiada bulunmasını ve bu iddiayı kanıtlamasını sağlar, ancak kanıtlayan kişi iddiasının ne olduğunu açıklamaz. 
+
+Örneğin, bir kullanıcının bir şifre ya da kimlik bilgisi hakkında bilgi sahibi olduğunu kanıtlaması gerektiğinde kullanılabilir.
+
+Bu teknoloji, özellikle blok zinciri teknolojileri gibi güvenliğin önemli olduğu alanlarda kullanılır. Etkileşimli sıfır bilgi kanıtları, kullanıcının gizliliğini korurken, güvenilirlik ve doğruluk sağlamak için kullanılabilir.
+
+#### Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
+Bir kullanıcının bir iddiada bulunmasını ve iddiasını kanıtlamasını sağlayan, ancak kullanıcının doğrudan bir kanıt sunmasına gerek kalmadan yapabilen bir kriptografik protokol türüdür. Bu protokoller, özellikle veri gizliliği ve kimlik doğrulama gibi alanlarda kullanılabilir. Etkileşimsiz sıfır bilgi kanıtlarında, kanıtlayan ve doğrulayan taraflar etkileşime geçmezler. Doğrulayıcı tarafından belirli bir zamanda yalnızca bir kez doğrulanabilir. Etkileşimsiz sıfır bilgi kanıtları, etkileşimli sıfır bilgi kanıtlarına göre daha fazla hesaplama gücü gerektirmektedir. 
+
+Etkileşimsiz sıfır bilgi kanıtları, blok zinciri teknolojileri gibi alanlarda kullanılan dijital para birimleri ve kimlik doğrulama gibi alanlarda kullanışlıdır. Örneğin, bir kullanıcının bir işlemin geçerli olduğunu kanıtlaması gerektiğinde veya bir kullanıcının kimliğinin doğruluğunu kanıtlaması gerektiğinde kullanılabilir. Bu teknoloji, kullanıcıların gizliliğini korurken, doğruluk ve güvenilirlik sağlamak için kullanılabilir.
+
+#### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
+zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Bu teknoloji, kullanıcının bir iddiayı doğrulamasına olanak tanıyan öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür. Bir kullanıcının bir iddiayı doğrulaması için sadece bir kanıt sunması yeterlidir ve bu kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir. Özellikle blok zinciri teknolojileri ve kriptoparalar gibi alanlarda kullanılır.
+
+Örneğin, kripto para birimleri gibi işlemlerin doğrulanması ve anonimliği sağlamak için kullanılabilir. Ancak, zk-SNARK'ın doğru bir şekilde kullanılması için, gizlilik, güvenlik ve doğruluk konularında dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir.
+
+![image](https://user-images.githubusercontent.com/123966022/226885106-9669f0b6-c253-4e78-befa-7b7689dbfaf6.png)
+
+#### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
+zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
+zk-STARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Kanıtın boyutu, verilerin boyutundan bağımsızdır ve sonuç olarak kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir.
+
+zk-STARK'ın blok zincirleri gibi alanlarda kullanılabilmesi, özellikle anonimlik ve güvenlik gibi konularda avantaj sağlar. Ancak, zk-STARK'ın uygulanması oldukça karmaşık olabilir ve doğruluğunun, gizliliğinin ve güvenliğinin sağlanması için dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir. 
+
+
 
 
 
