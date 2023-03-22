@@ -74,7 +74,14 @@ zk-STARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 
 zk-STARK'ın blok zincirleri gibi alanlarda kullanılabilmesi, özellikle anonimlik ve güvenlik gibi konularda avantaj sağlar. Ancak, zk-STARK'ın uygulanması oldukça karmaşık olabilir ve doğruluğunun, gizliliğinin ve güvenliğinin sağlanması için dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir. 
 
+Aşağıdaki tabloda zk-SNARK ve zk-STARK teknolojileri arasındaki farkları görebilirsiniz: 
 
+![image](https://user-images.githubusercontent.com/123966022/226895926-6fd963f2-c26c-4dc1-937d-49c0dcb0ed88.png)
+
+
+zk-STARK hash fonksiyonu kullandığı ve güvenilmez bir kanıt modeli tercih ettiği için; zk-SNARK teknolojisine göre doğrulama işlemi uzun sürebilir. Prover (kanıtlayan taraf) zaman olarak zk-SNARK'a göre daha düşüktür. 
+
+![image](https://user-images.githubusercontent.com/123966022/226896399-56e0f821-8d53-4298-981d-ac983522bd98.png)
 
 
 
