@@ -39,7 +39,7 @@ X kişisinin *renk körü* olduğunu ve *iki adet kırmızı ve yeşil renklerde
 İspat sistemi şu şekilde işliyor; X kişisi topları alıyor ve arkasına saklıyor. Sonrasında toplardan birini alıyor ve size gösteriyor. Daha sonrasında tekrardan arkasına saklıyor ve tekrardan bir topu gösteriyor. İki toptan birini seçme işlemi eşit olasılıkta gerçekleşiyor. Size sadece topu değiştirip değiştirmediğini sorar, tüm bu olay döngüsünü gerektiği sıklıkta tekrarlanabilir. 
 Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğini kesinlikle söyleyebilirsiniz. Ancak toplar aynı renkteyse ve ayırt edilemiyorsa, %50 yüksek olasılıkla tahmin etmeniz pek mümkün değil. 
 
-![image](https://user-images.githubusercontent.com/123966022/226885221-820edcac-980c-4ff6-8491-68823db36ac7.png)
+![image](https://user-images.githubusercontent.com/123966022/226891787-f4ed49d0-540e-4e16-bacf-091f7fee7fde.png)
 
 
 - Her ihtimali belirlemede rastgele başarı olasılığınız %50 ve tüm ihtimali belirleme olasılığınız sıfıra yakın. **(Sağlamlık)**
