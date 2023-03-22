@@ -18,31 +18,26 @@ Sıfır bilgi kanıtı, her türlü verinin geçerliliğini kanıtlayabilir. Bu 
 > Bunu daha somut bir şekilde düşünebiliriz; `C` olarak gösterilen bir programın iki girdisi olduğunu varsayalım: `C(x, w)`. Burada `x` halka açık olan girdi, `w` ise gizli şahit girdisidir. Programın çıktısı boolean yani ya `doğru` ya da `yanlış`. Amaç, belirli bir halka açık girdi `x` verildiğinde, ispatlayıcı bir gizli girdi `w` bildiğini ve `C(x,w) == true` olduğunu kanıtlamaktır.
 
 
-***Zero Knowledge (Sıfır-bilgi kanıtları)*, özel verilerle ilgili bir dizi açıklamanın kanıtlanmasını sağladığından birçok uygulamada avantaj sağlar.**
+***Zero Knowledge (Sıfır-bilgi kanıtları)*, özel verilerle ilgili bir dizi açıklamanın kanıtlanmasını sağladığından birçok uygulamada avantaj sağlar:**
 
-- Özel verilerle ilgili açıklama kanıtlama:
+- Özel Verilerle İlgili Kanıtlama
     - A kişisinin banka hesabında X'ten fazla para olduğunu kanıtlama
     - Bir bankanın son bir yılda Y varlığıyla işlem yapmadığını kanıtlama
     - Tüm DNA'yı ifşa etmeden eşleşen DNA'yı kanıtlama
     - Kredi skoru Z'den yüksek olan birinin varlığını kanıtlama
 
-- Anonim yetkilendirme:
+- Anonim Yetkilendirme
      - Kimliğini ifşa etmeden web sitesinin kısıtlı alanına erişme hakkına sahip olan R kişisinin bunu kanıtlaması (örneğin, giriş, şifre)
      - Hangi ülkelerin/eyaletlerin listeye dahil edildiğini ifşa etmeden birinin izin verilen ülkelerden/bölgelerden biri olduğunu kanıtlama
      - Metro/otobüs geçiş kartına ait kimlik numarasını ifşa etmeden aylık geçiş hakkına sahip olduğunu kanıtlama
 
-- Anonim ödemeler 
+- Anonim Ödemeler 
      - Kimlikle tamamen bağlantısız ödeme yapabilme
      - Gelirlerini ifşa etmeden vergi ödeme
 
-- Hesaplama dış kaynak kullanımı 
+- Hesaplama Dış Kaynak Kullanımı 
      - Pahalı bir hesaplamayı dış kaynak kullanarak gerçekleştirip sonucun doğru olduğunu yeniden yürütmeye gerek kalmadan doğrulama; güvensiz hesaplama kategorisi açılır
      - Herkesin aynı şeyi hesapladığı blok zinciri modelini, bir tarafın hesapladığı ve herkesin doğruladığı modele değiştirme
-
-
-
-
-
 
 
 **Zero Knowledge için üç temel özellik mevcuttur:** 
@@ -72,7 +67,7 @@ Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğ
 
 
 - Her ihtimali belirlemede rastgele başarı olasılığınız %50 ve tüm ihtimali belirleme olasılığınız sıfıra yakın. **(Sağlamlık)**
--	X kişisi ve siz, ispat işlemini birçok kez tekrarlarsanız, X kişisi topların gerçekten de farklı olduğuna ikna olacaktır. **(Bütünlük)**
+- X kişisi ve siz, ispat işlemini birçok kez tekrarlarsanız, X kişisi topların gerçekten de farklı olduğuna ikna olacaktır. **(Bütünlük)**
 
 Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
 
