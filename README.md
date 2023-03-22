@@ -129,4 +129,20 @@ Sıfır bilgi kanıtı, şifre gibi gizli ve kişisel verileri değiştirmeden k
 ZKP'ler, bir makine öğrenimi algoritmasının sahibinin model hakkında herhangi bir bilgi açıklamadan diğerlerine model sonuçları hakkında ikna etmesine olanak tanıyabilir.
 
 
+## Sıfır Bilgi Kanıtlarının Zorlukları Nelerdir? 
+- Sıfır Bilgi Kanıtlarının Garantisi Olmaması 
+
+Top seçimi sürecinin her tekrarlama aşamasında kanıtlayıcının yalan söyleme olasılığı azalır, ancak hiçbir zaman sıfıra ulaşamaz. Bu nedenle, sıfır bilgi kanıtları matematiksel olarak gerçek bir kanıt değildir.
+
+- Yoğun Hesaplama Süreci  
+
+Kullanılan algoritmalar, doğrulayıcı ve kanıtlayıcı arasında birçok etkileşim gerektirdiği için (etkileşimli ZKP'lerde), veya yüksek hesaplama kapasiteleri gerektirdiği için (etkileşimsiz ZKP'lerde) hesaplama yoğunluğuna sahiptir. Bu durum, ZKP'lerin yavaş veya mobil cihazlar için uygun olmamasına neden olur.
+
+- Sınırlı Kullanım
+
+Sıfır bilgi kanıtları, sayısal verilere dayandığı için kısıtlıdır. Bu, diğer tür bilgilerle yapılmayacak olan sayısal değerlere bir geçişin gerekliliği anlamına gelir. Bu finansal ve benzeri sayısal işlemler için bir endişe olmayabilirken, sıfır bilgi kanıtları büyük karmaşık veri kümeleriyle kullanıldığında daha az pratiktir.
+
+-	Minimal Altyapı
+
+Başka bir zorluk, protokol ile ilgisi olmayan bir konudur. Sıfır bilgi kanıtlarının uygulanması o kadar yeni ki, belirlenmiş standartlar, diller ve sistemlerin eksikliği bulunmaktadır. Bu altyapı eksikliği, kurumların önce bir etkileşim sistemi kurmadan sıfır bilgi kanıtlarını kullanarak etkileşimde bulunmasını zorlaştırır. ZKProof, sıfır bilgi kanıtlarının benimsenmesini hızlandıracak uluslararası standartları oluşturmaya çalışan bir organizasyondur.
 
