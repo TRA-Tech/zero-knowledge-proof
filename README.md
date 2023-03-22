@@ -32,12 +32,12 @@ Sıfır bilgi kanıtı, her türlü verinin geçerliliğini kanıtlayabilir. Bu 
      - Metro/otobüs geçiş kartına ait kimlik numarasını ifşa etmeden aylık geçiş hakkına sahip olduğunu kanıtlama
 
 - Anonim ödemeler 
-      - Kimlikle tamamen bağlantısız ödeme yapabilme
-      - Gelirlerini ifşa etmeden vergi ödeme
+     - Kimlikle tamamen bağlantısız ödeme yapabilme
+     - Gelirlerini ifşa etmeden vergi ödeme
 
 - Hesaplama dış kaynak kullanımı 
-      - Pahalı bir hesaplamayı dış kaynak kullanarak gerçekleştirip sonucun doğru olduğunu yeniden yürütmeye gerek kalmadan doğrulama; güvensiz hesaplama kategorisi açılır
-      - Herkesin aynı şeyi hesapladığı blok zinciri modelini, bir tarafın hesapladığı ve herkesin doğruladığı modele değiştirme
+     - Pahalı bir hesaplamayı dış kaynak kullanarak gerçekleştirip sonucun doğru olduğunu yeniden yürütmeye gerek kalmadan doğrulama; güvensiz hesaplama kategorisi açılır
+     - Herkesin aynı şeyi hesapladığı blok zinciri modelini, bir tarafın hesapladığı ve herkesin doğruladığı modele değiştirme
 
 
 
