@@ -148,13 +148,16 @@ zk-STARK'ın blok zincirleri gibi alanlarda kullanılabilmesi, özellikle anonim
 
 ### zk-SNARK ve zk-STARK Arasındaki Fark Nedir?
 
-- Scalability: zk-SNARK, hesaplama gücü açısından daha yüksek bir ölçeklenebilirlik sınırına sahiptir. Karmaşık ispatları çözerken bile, SNARK'a kıyasla daha az hesaplama gücü gerektirir. Bu nedenle, zk-STARK'a kıyasla daha hızlı ve daha ölçeklenebilir bir teknolojidir.
+- **Scalability**: zk-SNARK, hesaplama gücü açısından daha yüksek bir ölçeklenebilirlik sınırına sahiptir. Karmaşık ispatları çözerken bile, SNARK'a kıyasla daha az hesaplama gücü gerektirir. Bu nedenle, zk-STARK'a kıyasla daha hızlı ve daha ölçeklenebilir bir teknolojidir.
 
-- Transparency: zk-SNARK, ispat için güvenilir bir kurulum gerektirir. Bu kurulum işlemi, herhangi bir hileli davranışta bulunulmaması için çok önemlidir. Ancak zk-STARK, güvenilir bir kurulum gerektirmez ve bu nedenle daha şeffaf bir teknolojidir.
+- **Transparency**: zk-SNARK, ispat için güvenilir bir kurulum gerektirir. Bu kurulum işlemi, herhangi bir hileli davranışta bulunulmaması için çok önemlidir. Ancak zk-STARK, güvenilir bir kurulum gerektirmez ve bu nedenle daha şeffaf bir teknolojidir.
 
-- Security Assumptions: zk-SNARK, çift örneklemeli hesaplamalara dayanırken, zk-STARK, post-kuantum güvenlik önlemleri sağlamak için polinomların kullanımına dayanır. Bu nedenle, zk-STARK, gelecekteki kuantum saldırılarına karşı daha dayanıklı olabilir.
+- **Security Assumptions**: zk-SNARK, çift örneklemeli hesaplamalara dayanırken, zk-STARK, post-kuantum güvenlik önlemleri sağlamak için polinomların kullanımına dayanır. Bu nedenle, zk-STARK, gelecekteki kuantum saldırılarına karşı daha dayanıklı olabilir.
 
-- Proof Size: zk-SNARK, daha küçük ispat boyutlarına sahipken, zk-STARK, daha büyük ispat boyutlarına sahiptir. Bu, zk-STARK'ın daha uzun süreçlerde kullanımı için daha uygundur.
+- **Proof Size**: Sıfır bilgi kanıtı, bir tarafın (kanıtlayan) belirli bir ifadenin doğru olduğunu diğer tarafına (doğrulayıcıya) açıklamadan kanıtlama yöntemidir. Kanıt boyutu, bu kanıt için gereken veri miktarına atıfta bulunur.
+Kanıt boyutu, sıfır bilgi kanıtında belirleyici bir faktördür, çünkü kanıt boyutu ne kadar büyükse, kanıtı oluşturmak ve göndermek için gereken hesaplama ve etkileşim o kadar fazla olur.
+Güvenilir kurulumu tamamlanmış bir SNARK'ın ispat boyutu, STARK'lara göre önemli ölçüde daha küçüktür. Sonuç olarak, SNARK'ın gaz tüketimi ve gereken zamanı STARK'tan önemli ölçüde daha düşüktür. Bu, birçok projenin neden SNARK uygulamayı tercih ettiği nedenlerden biridir.
+
 
 Sonuç olarak, zk-SNARK ve zk-STARK, farklı avantajlar ve dezavantajlar sunan iki farklı teknolojidir. Her ikisi de blok zinciri ve diğer alanlarda gizlilik ve güvenlik açısından önemli bir rol oynamaktadır.
 
@@ -167,7 +170,6 @@ zk-STARK hash fonksiyonu kullandığı ve güvenilmez bir kanıt modeli tercih e
 ![image](https://user-images.githubusercontent.com/123966022/226896399-56e0f821-8d53-4298-981d-ac983522bd98.png)
 
 
-![image](https://user-images.githubusercontent.com/123966022/227196339-8049661b-0f9c-482a-989b-33552d3bc7ea.png)
 
 ## Sıfır Bilgi Kanıtlarının Kullanım ve Uygulama Alanları 
 
