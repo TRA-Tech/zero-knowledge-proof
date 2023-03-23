@@ -4,6 +4,19 @@
 
 ![image](https://user-images.githubusercontent.com/123966022/226599025-82affff6-cf38-4f89-8317-8a9405ac880c.png)
 
+### Zero Knowledge Nedir?
+### Zero Knowledge (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
+  - Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
+  - Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
+  - Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
+  - Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
+### Sıfır Bilgi Kanıtlarının Kullanım ve Uygulama Alanları 
+### Sıfır Bilgi Kanıtlarının Zorlukları Nelerdir? 
+
+
+
+
+
 
 ## Zero Knowledge Nedir? 
 
