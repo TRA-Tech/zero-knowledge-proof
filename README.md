@@ -1,4 +1,4 @@
-# ZERO KNOWLEDGE
+# ZERO KNOWLEDGE PROOFS
 **Zero Knowledge**, ilk olarak 1980 yılında MIT araştırmacıları Shafi Goldwasser, Silvio Micali ve Charles Rackoff tarafından ortaya çıkmıştır. Araştırmacılar, *İnteraktif Kanıtlama Sistemleri* üzerinde çalışmalar sürdürürken, birinci taraf **Prover** ve mesajı doğrulayan taraf **Verifier** arasındaki ilişkiyi tanımlayacak teorik çalışmalar yürütmüşlerdir. Geçmişi 1980'li yıllara dayanan ve gelecekte hemen hemen her alanda kullanılabilecek bu teknolojiyi detaylarıyla sizler için bu repositories'te topladık. 
 
 ![image](https://user-images.githubusercontent.com/123966022/226599025-82affff6-cf38-4f89-8317-8a9405ac880c.png)
