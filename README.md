@@ -73,6 +73,11 @@ Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğ
 Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
 
 ## Zero Knowledge (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
+- Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
+- Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
+- Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
+- Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
+
 
 ### Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
 Etkileşimli sıfır bilgi kanıtlarında, kanıtlayan ve doğrulan taraflar birkaç kez etkileşime girerler. Doğrulayıcı, ispat edene kadar sorular sorarak kanıtlayana meydan okur. Bu teknoloji, bir kullanıcının bir iddiada bulunmasını ve bu iddiayı kanıtlamasını sağlar, ancak kanıtlayan kişi iddiasının ne olduğunu açıklamaz. 
@@ -81,10 +86,12 @@ Etkileşimli sıfır bilgi kanıtlarında, kanıtlayan ve doğrulan taraflar bir
 
 Bu teknoloji, özellikle blok zinciri teknolojileri gibi güvenliğin önemli olduğu alanlarda kullanılır. Etkileşimli sıfır bilgi kanıtları, kullanıcının gizliliğini korurken, güvenilirlik ve doğruluk sağlamak için kullanılabilir.
 
+
 ### Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
 Bir kullanıcının bir iddiada bulunmasını ve iddiasını kanıtlamasını sağlayan, ancak kullanıcının doğrudan bir kanıt sunmasına gerek kalmadan yapabilen bir kriptografik protokol türüdür. Bu protokoller, özellikle veri gizliliği ve kimlik doğrulama gibi alanlarda kullanılabilir. Etkileşimsiz sıfır bilgi kanıtlarında, kanıtlayan ve doğrulayan taraflar etkileşime geçmezler. Doğrulayıcı tarafından belirli bir zamanda yalnızca bir kez doğrulanabilir. Etkileşimsiz sıfır bilgi kanıtları, etkileşimli sıfır bilgi kanıtlarına göre daha fazla hesaplama gücü gerektirmektedir. 
 
 Etkileşimsiz sıfır bilgi kanıtları, blok zinciri teknolojileri gibi alanlarda kullanılan dijital para birimleri ve kimlik doğrulama gibi alanlarda kullanışlıdır. Örneğin, bir kullanıcının bir işlemin geçerli olduğunu kanıtlaması gerektiğinde veya bir kullanıcının kimliğinin doğruluğunu kanıtlaması gerektiğinde kullanılabilir. Bu teknoloji, kullanıcıların gizliliğini korurken, doğruluk ve güvenilirlik sağlamak için kullanılabilir.
+
 
 ### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
 zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Bu teknoloji, kullanıcının bir iddiayı doğrulamasına olanak tanıyan öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür. Bir kullanıcının bir iddiayı doğrulaması için sadece bir kanıt sunması yeterlidir ve bu kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir. Özellikle blok zinciri teknolojileri ve kriptoparalar gibi alanlarda kullanılır.
@@ -94,6 +101,19 @@ zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 Örneğin, kripto para birimleri gibi işlemlerin doğrulanması ve anonimliği sağlamak için kullanılabilir. Ancak, zk-SNARK'ın doğru bir şekilde kullanılması için, gizlilik, güvenlik ve doğruluk konularında dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir.
 
 ![image](https://user-images.githubusercontent.com/123966022/226885106-9669f0b6-c253-4e78-befa-7b7689dbfaf6.png)
+
+**Bir zk-SNARK, üç algoritmadan oluşur:** `G`, `P` ve `V`.
+
+- *Anahtar üreteci* `G`, gizli bir parametre `lambda` ve bir program `C` alır ve iki açık anahtar olan bir *kanıt anahtarı* `pk` ve *doğrulama anahtarı* `vk` üretir. Bu anahtarlar, yalnızca bir kez `C` programı için oluşturulması gereken genel parametrelerdir.
+
+- *Kanıtlayıcı* `P`, kanıt anahtarı `pk`, bir kamu girdisi `x` ve özel bir şahit `w` olarak girilen girdileri alır. Bu algoritma, kanıtlayıcının bir şahit `w` bildiğini ve şahidin programı sağladığını gösteren bir kanıt `prf = P(pk, x, w)` oluşturur.
+
+- *Doğrulayıcı* `V`, doğrulama anahtarı `vk`, bir kamu girdisi `x` ve bir kanıt prf alır ve kanıtın doğru olup olmadığını hesaplar. Bu işlev, kanıtlayıcının `C(x,w) == true` koşulunu sağlayan bir şahit `w` bildiğini doğrular.
+
+Burada anahtar üretiminde kullanılan gizli `lambda` parametresine dikkat edilmelidir. Bu parametre, zk-SNARK'ların gerçek dünya uygulamalarında kullanımını zorlaştırır. Nedeni ise lambda'yı bilen herhangi bir kişi, herhangi bir program `C` ve açık girdi `x` için, gizli `w` bilgisi olmadan doğru olduğu kanıtı `fake_prf` gibi sahte bir kanıt oluşturabilir.
+
+![image](https://user-images.githubusercontent.com/123966022/227129697-e80777ef-d6df-4700-95cf-49aae2ac7587.png)
+
 
 
 ### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
