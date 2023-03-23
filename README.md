@@ -177,3 +177,18 @@ Sıfır bilgi kanıtları, sayısal verilere dayandığı için kısıtlıdır. 
 
 Başka bir zorluk, protokol ile ilgisi olmayan bir konudur. Sıfır bilgi kanıtlarının uygulanması o kadar yeni ki, belirlenmiş standartlar, diller ve sistemlerin eksikliği bulunmaktadır. Bu altyapı eksikliği, kurumların önce bir etkileşim sistemi kurmadan sıfır bilgi kanıtlarını kullanarak etkileşimde bulunmasını zorlaştırır. ZKProof, sıfır bilgi kanıtlarının benimsenmesini hızlandıracak uluslararası standartları oluşturmaya çalışan bir organizasyondur.
 
+
+## Ethereum'da zk-SNARK'ların Kullanımı
+
+Ethereum, merkezi olmayan uygulamaların geliştirilmesine olanak sağlayan bir blok zinciridir. Ancak, bu uygulamaların tümü blok zincirinde çalıştırılır ve bu nedenle blok zincirindeki hesaplama gücü ve depolama alanı sınırlıdır. Bu sınırlamalar, bazı uygulamaların yeterince hızlı veya verimli bir şekilde çalışmasını engelleyebilir. Bu sorunu çözmek için, zk-SNARK'lar gibi çözümler Ethereum'un geliştiricileri tarafından entegre edilmeye başlandı.
+
+zk-SNARK'lar, Sıfır Bilgi Kanıtı olarak adlandırılan bir protokolü kullanır. Bu protokol, bir kanıtlayıcının bir belgeyi sunduğu bir doğrulama sistemi oluşturur. Bu doğrulama sistemi, belgeyi doğrulamak için gerekli olan tüm bilgileri içerir, ancak belgenin kendisi hakkında hiçbir bilgi sağlamaz. Bu, belgeyi doğrulamanın, belgenin içeriğinin tam olarak görülmeden yapılmasına olanak tanır.
+
+![image](https://user-images.githubusercontent.com/123966022/227145532-d6dc9599-5210-456a-81d9-cd8b7f9d2f4a.png)
+
+Ethereum'da zk-SNARK'ların kullanımı, doğrulama algoritmasının blok zincirine entegre edilmesiyle gerçekleştirilir. Bu, zincir dışında çalıştırılan bir üreteç kullanılarak kanıt anahtarının ve doğrulama anahtarının oluşturulmasını gerektirir. Daha sonra, bir kanıtlayıcı kanıt anahtarını kullanarak bir kanıt oluşturabilir ve bu kanıt blok zincirine eklenmeden önce doğrulama anahtarı ve kamu girdisi ile birlikte doğrulama algoritmasından geçirilebilir. Doğrulama algoritmasının sonucu, blok zincirindeki akıllı sözleşmenin diğer aktiviteleri tetiklemesine izin verir.
+
+zk-SNARK'lar Ethereum'da birçok farklı kullanım alanı sunar. Örneğin, özel bir veritabanında depolanan özel bilgilerin kullanımını kontrol etmek için kullanılabilirler. Ayrıca, blok zinciri içinde gerçekleştirilen anlaşmaların doğrulanması için kullanılabilirler.
+
+Sonuç olarak, zk-SNARK'lar gibi teknolojiler, blok zincirinin kullanımının daha da genişlemesine olanak tanır ve Ethereum'da daha güvenli ve ölçeklenebilir uygulamaların geliştirilmesine yardımcı olur.
+
