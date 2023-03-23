@@ -105,9 +105,18 @@ Etkileşimsiz sıfır bilgi kanıtları, blok zinciri teknolojileri gibi alanlar
 
 
 ### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
+zk-SNARK, Zerocash'ın ortak mucidi, Zcash'ın ortak kurucusu ve StarkWare Industries'in ortak kurucusu olan Profesör Alessandro Chiesa ve ekibi tarafından Ocak 2012'de ortaya çıkarıldı.
+
 zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Bu teknoloji, kullanıcının bir iddiayı doğrulamasına olanak tanıyan öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür. Bir kullanıcının bir iddiayı doğrulaması için sadece bir kanıt sunması yeterlidir ve bu kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir. Özellikle blok zinciri teknolojileri ve kriptoparalar gibi alanlarda kullanılır.
 
 > SNARK = **S**uccinct **N**on-interactive **AR**guments of **K**nowledge
+
+
+**Succinct**: Bu, daha küçük boyutlu bir ispatın sağladığı hızlı ve kolay doğrulamayı ifade eder. "Hızlı ve kolay" burada minimal hesaplama gereksinimlerine dönüşür, bu da SNARK'ın azaltılmış gaz tüketimi ve blok zincirinde daha hızlı işlemler için avantajlı olmasını sağlar.
+
+**Non-interactive**: Etkileşimsiz zkp, bir kanıtlayıcının herhangi bir etkileşim olmadan belirli bir bilgiye sahip olduğunu kriptografi yoluyla kanıtlamasına olanak tanıyarak, etkileşimli zkp'nin sınırlamalarını aşar. Bugün zero-knowledge proof teknolojisi olarak adlandırdığımız çoğu şey, etkileşimsiz zkp'dır. (Etkileşimli zkp'nin sınırlaması: İspatlar olasılığa dayanır ve birden fazla etkileşim gerektirir, bu da hız ve hesaplama açısından kısmen verimsizdir.)
+
+(Not: İki teknoloji arasındaki açık kontrast için, karşılaştırmalar erken SNARK'lar üzerinden yapılmıştır.)
 
 Örneğin, kripto para birimleri gibi işlemlerin doğrulanması ve anonimliği sağlamak için kullanılabilir. Ancak, zk-SNARK'ın doğru bir şekilde kullanılması için, gizlilik, güvenlik ve doğruluk konularında dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir.
 
@@ -124,6 +133,10 @@ zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 Burada anahtar üretiminde kullanılan gizli `lambda` parametresine dikkat edilmelidir. Bu parametre, zk-SNARK'ların gerçek dünya uygulamalarında kullanımını zorlaştırır. Nedeni ise lambda'yı bilen herhangi bir kişi, herhangi bir program `C` ve açık girdi `x` için, gizli `w` bilgisi olmadan doğru olduğu kanıtı `fake_prf` gibi sahte bir kanıt oluşturabilir.
 
 ![image](https://user-images.githubusercontent.com/123966022/227129697-e80777ef-d6df-4700-95cf-49aae2ac7587.png)
+
+
+
+
 
 
 
