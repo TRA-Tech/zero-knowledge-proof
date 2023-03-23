@@ -133,11 +133,6 @@ Burada anahtar üretiminde kullanılan gizli `lambda` parametresine dikkat edilm
 ![image](https://user-images.githubusercontent.com/123966022/227129697-e80777ef-d6df-4700-95cf-49aae2ac7587.png)
 
 
-
-
-
-
-
 ### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
 zk-STARK, 2018 yılında Eli Ben-Sasson ve ekibi tarafından ortaya çıkarılmıştır. zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
 zk-STARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Kanıtın boyutu, verilerin boyutundan bağımsızdır ve sonuç olarak kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir.
@@ -151,7 +146,18 @@ zk-STARK'ın blok zincirleri gibi alanlarda kullanılabilmesi, özellikle anonim
 **Transparent**: STARK güvenilir bir kurulum gerektirmez. Bu, ispat için kullanılan parametrelerin şeffaf bir şekilde açıklandığı anlamına gelir.
 
 
-Aşağıdaki tabloda zk-SNARK ve zk-STARK teknolojileri arasındaki farkları görebilirsiniz: 
+### zk-SNARK ve zk-STARK Arasındaki Fark Nedir?
+
+- Scalability: zk-SNARK, hesaplama gücü açısından daha yüksek bir ölçeklenebilirlik sınırına sahiptir. Karmaşık ispatları çözerken bile, SNARK'a kıyasla daha az hesaplama gücü gerektirir. Bu nedenle, zk-STARK'a kıyasla daha hızlı ve daha ölçeklenebilir bir teknolojidir.
+
+- Transparency: zk-SNARK, ispat için güvenilir bir kurulum gerektirir. Bu kurulum işlemi, herhangi bir hileli davranışta bulunulmaması için çok önemlidir. Ancak zk-STARK, güvenilir bir kurulum gerektirmez ve bu nedenle daha şeffaf bir teknolojidir.
+
+- Security Assumptions: zk-SNARK, çift örneklemeli hesaplamalara dayanırken, zk-STARK, post-kuantum güvenlik önlemleri sağlamak için polinomların kullanımına dayanır. Bu nedenle, zk-STARK, gelecekteki kuantum saldırılarına karşı daha dayanıklı olabilir.
+
+- Proof Size: zk-SNARK, daha küçük ispat boyutlarına sahipken, zk-STARK, daha büyük ispat boyutlarına sahiptir. Bu, zk-STARK'ın daha uzun süreçlerde kullanımı için daha uygundur.
+
+Sonuç olarak, zk-SNARK ve zk-STARK, farklı avantajlar ve dezavantajlar sunan iki farklı teknolojidir. Her ikisi de blok zinciri ve diğer alanlarda gizlilik ve güvenlik açısından önemli bir rol oynamaktadır.
+
 
 ![image](https://user-images.githubusercontent.com/123966022/226895926-6fd963f2-c26c-4dc1-937d-49c0dcb0ed88.png)
 
@@ -159,6 +165,9 @@ Aşağıdaki tabloda zk-SNARK ve zk-STARK teknolojileri arasındaki farkları g�
 zk-STARK hash fonksiyonu kullandığı ve güvenilmez bir kanıt modeli tercih ettiği için; zk-SNARK teknolojisine göre doğrulama işlemi uzun sürebilir. Prover (kanıtlayan taraf) zaman olarak zk-SNARK'a göre daha düşüktür. 
 
 ![image](https://user-images.githubusercontent.com/123966022/226896399-56e0f821-8d53-4298-981d-ac983522bd98.png)
+
+
+![image](https://user-images.githubusercontent.com/123966022/227196339-8049661b-0f9c-482a-989b-33552d3bc7ea.png)
 
 ## Sıfır Bilgi Kanıtlarının Kullanım ve Uygulama Alanları 
 
