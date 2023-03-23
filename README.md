@@ -139,12 +139,17 @@ Burada anahtar üretiminde kullanılan gizli `lambda` parametresine dikkat edilm
 
 
 ### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
-zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
+zk-STARK, 2018 yılında Eli Ben-Sasson ve ekibi tarafından ortaya çıkarılmıştır. zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
 zk-STARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve verimli bir şekilde yapılmasına olanak tanır. Kanıtın boyutu, verilerin boyutundan bağımsızdır ve sonuç olarak kanıt, oldukça küçük boyutlu ve hızlı bir şekilde doğrulanabilir.
 
 zk-STARK'ın blok zincirleri gibi alanlarda kullanılabilmesi, özellikle anonimlik ve güvenlik gibi konularda avantaj sağlar. Ancak, zk-STARK'ın uygulanması oldukça karmaşık olabilir ve doğruluğunun, gizliliğinin ve güvenliğinin sağlanması için dikkatli bir şekilde tasarlanması ve uygulanması gerekmektedir. 
 
-> STARK = **S**uccinct (**S**calable) **T**ransparent **AR**guments of **K**nowledge
+> STARK = **S**calable **T**ransparent **AR**guments of **K**nowledge
+
+**Scalable**: zk-STARK, blok zincirinin ölçeklenebilirliğini iyileştirmeye odaklanan bir teknolojidir. Karmaşık ispatları çözerken bile, SNARK'a kıyasla büyük ölçüde daha yüksek bir hesaplama gücü gerektirmez ve bu nedenle daha iyi ölçeklenebilirlik beklenir. Aşağıdaki grafik, STARK beyaz kağıdından alınan verilere dayanarak, hesaplama karmaşıklığı arttıkça SNARK ve STARK için gereken süredeki değişikliği görselleştirir. İspatın artan karmaşıklığına rağmen STARK, nispeten mütevazı dalgalanmalar gösterir.
+
+**Transparent**: STARK güvenilir bir kurulum gerektirmez. Bu, ispat için kullanılan parametrelerin şeffaf bir şekilde açıklandığı anlamına gelir.
+
 
 Aşağıdaki tabloda zk-SNARK ve zk-STARK teknolojileri arasındaki farkları görebilirsiniz: 
 
