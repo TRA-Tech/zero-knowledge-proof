@@ -164,23 +164,23 @@ zk-STARK hash fonksiyonu kullandığı ve güvenilmez bir kanıt modeli tercih e
 
 ## Sıfır Bilgi Kanıtlarının Kullanım ve Uygulama Alanları 
 
-- **BLOCKCHAIN** 
+- **BLOCKCHAIN:** 
 Bitcoin ve Ethereum gibi halka açık blokzincirlerinin şeffaflığı, işlemleri kamuya açık ve doğrulanmasını mümkün kılar. Ancak bu durum daha az mahremiyet anlamına gelir ve kullanıcıların anonimleştirilmesine yol açabilir. 
 Zero Knowledge bu bağlamda kamuya açık blok zincirlerine daha fazla gizlilik kazandırabilir. Örneğin, Zcash kripto para birimi, Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARK) adlı bir zero-knowledge yöntemine dayanmaktadır. Ayrıca Ethereum blok zincirinde kullanılan ve ölçeklenebilirlik ve gizlilik sağlayan Zero-Knowledge Scalable Transparent Argument of Knowledge (zk-STARK) yöntemidir. 2018'de, Bulletproofs tanıtıldı. Bulletproofs, güvenilir kurulum gerektirmeyen etkileşimsiz sıfır bilgi kanıtından bir iyileştirme yapar.
 
-- **FİNANS** 
+- **FİNANS:** 
 ING, müşterilerinin gizli numaralarını belirli bir aralıklarda doğruluğunu kanıtlayabilecekleri ZKPs yöntemi kullanıyor. Örnek vermek gerekirse, konut kredisi almak için başvuru yapan kişi net maaş bilgisini paylaşmadan kredi almaya uygun olduğunu kanıtlayabilir. 
 
-- **KİMLİK DOĞRULAMA** 
+- **KİMLİK DOĞRULAMA:** 
 Sıfır bilgi kanıtı, şifre gibi gizli ve kişisel verileri değiştirmeden kullanıcıların kimlik bilgilerini doğrulamalarını sağlayabilir. 
 
-- **MAKİNE ÖĞRENİMİ**
+- **MAKİNE ÖĞRENİMİ:**
 ZKP'ler, bir makine öğrenimi algoritmasının sahibinin model hakkında herhangi bir bilgi açıklamadan diğerlerine model sonuçları hakkında ikna etmesine olanak tanıyabilir.
 
-- **ETİK DAVRANIŞ** 
+- **ETİK DAVRANIŞ:** 
 Zero Knowledge (Sıfır Bilgi) protokollerinde dikkat çeken ve üzerinde durulması gereken durumlardan biri de; gizliliği korurken dürüst davranışı da korumaktadır. Bu sebeple, bir beyanı olan kullanıcı protokole göre doğru davrandığını kanıtlamak için sıfır bilgi kanıtını kullanmak zorundadır. Geçerli bir kanıt sağlamak için dürüst olmak zorunda olduğunu biliniyor. Sıfır bilgi kanıtı sayesinde kullanıcı gizliliğini korumak istediği bilgileri koruyabilir ve açıklamaz. 
 
-- **NÜKLEER SİLAHSIZLANMA** 
+- **NÜKLEER SİLAHSIZLANMA:** 
 Princeton Plazma Fizik Laboratuvarı ve Princeton Üniversitesi, 2016 yılında gelecekteki nükleer silahsızlanma görüşmeleri için uygulanabilirliği olabilecek bir yöntem oluşturdu. Nükleer Silahsızlanma çerçevesinde yer alabilecek her husus-muayene ekipleri, iç yapısı ve denetimi, gizlenmesi gereken nükleer silah olup olmadığını iç çalışmalar kayıt dışı kalarak ve paylaşım gereği olmadan, ortaya çıkarmadan tamamlayabilir.  
 
 
