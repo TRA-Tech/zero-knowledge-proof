@@ -90,6 +90,7 @@ Bir kullanıcının bir iddiada bulunmasını ve iddiasını kanıtlamasını sa
 
 Etkileşimsiz sıfır bilgi kanıtları, blok zinciri teknolojileri gibi alanlarda kullanılan dijital para birimleri ve kimlik doğrulama gibi alanlarda kullanışlıdır. Örneğin, bir kullanıcının bir işlemin geçerli olduğunu kanıtlaması gerektiğinde veya bir kullanıcının kimliğinin doğruluğunu kanıtlaması gerektiğinde kullanılabilir. Bu teknoloji, kullanıcıların gizliliğini korurken, doğruluk ve güvenilirlik sağlamak için kullanılabilir.
 
+Şu anda blockchain protokolleri tarafından kullanılan iki tür Zero Knowledge teknolojisi vardır: **ZK-SNARKs** ve **ZK-STARKs.**
 
 ### Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
 zk-SNARK, Zerocash'ın ortak mucidi, Zcash'ın ortak kurucusu ve StarkWare Industries'in ortak kurucusu olan Profesör Alessandro Chiesa ve ekibi tarafından Ocak 2012'de ortaya çıkarıldı.
@@ -102,6 +103,9 @@ zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 **Succinct**: Bu, daha küçük boyutlu bir ispatın sağladığı hızlı ve kolay doğrulamayı ifade eder. "Hızlı ve kolay" burada minimal hesaplama gereksinimlerine dönüşür, bu da SNARK'ın azaltılmış gaz tüketimi ve blok zincirinde daha hızlı işlemler için avantajlı olmasını sağlar.
 
 **Non-interactive**: Etkileşimsiz zkp, bir kanıtlayıcının herhangi bir etkileşim olmadan belirli bir bilgiye sahip olduğunu kriptografi yoluyla kanıtlamasına olanak tanıyarak, etkileşimli zkp'nin sınırlamalarını aşar. Bugün zero-knowledge proof teknolojisi olarak adlandırdığımız çoğu şey, etkileşimsiz zkp'dır. (Etkileşimli zkp'nin sınırlaması: İspatlar olasılığa dayanır ve birden fazla etkileşim gerektirir, bu da hız ve hesaplama açısından kısmen verimsizdir.)
+
+**Argument of Knowledge**: Protokol bu doğrultuda yukarıda belirtilen "sağlamlık" kriterlerini karşılamalıdır, böylece hile yapılması imkansızdır ve gerçekle ilgisi olmayan herhangi biri için ZK-SNARK oluşturmak çok zordur.
+
 
 (Not: İki teknoloji arasındaki açık kontrast için, karşılaştırmalar erken SNARK'lar üzerinden yapılmıştır.)
 
