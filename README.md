@@ -119,8 +119,6 @@ zk-SNARK, veri gizliliğini koruyarak doğrulama işlemlerinin hızlı ve veriml
 
 Burada anahtar üretiminde kullanılan gizli `lambda` parametresine dikkat edilmelidir. Bu parametre, zk-SNARK'ların gerçek dünya uygulamalarında kullanımını zorlaştırır. Nedeni ise lambda'yı bilen herhangi bir kişi, herhangi bir program `C` ve açık girdi `x` için, gizli `w` bilgisi olmadan doğru olduğu kanıtı `fake_prf` gibi sahte bir kanıt oluşturabilir.
 
-![image](https://user-images.githubusercontent.com/123966022/227129697-e80777ef-d6df-4700-95cf-49aae2ac7587.png)
-
 
 ### Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
 zk-STARK, 2018 yılında Eli Ben-Sasson ve ekibi tarafından ortaya çıkarılmıştır. zk-STARK, öz kısa etkileşimsiz sıfır bilgi kanıtlarının bir türüdür ve blok zincirlerinde kullanılabilen bir doğrulama protokolüdür. Diğer sıfır bilgi kanıtı türlerinden farklı olarak, zk-STARK'ın temel özelliği ölçeklenebilirliktir. Bu teknoloji, özellikle büyük veri işleme işlemlerinde kullanılabilir.
