@@ -3,17 +3,6 @@
 
 ![image](https://user-images.githubusercontent.com/123966022/226599025-82affff6-cf38-4f89-8317-8a9405ac880c.png)
 
-## İÇİNDEKİLER 
-### Zero Knowledge Proofs Nedir?
-### Zero Knowledge Proof (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
-  - Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
-  - Non-Interactive Zero-Knowledge Proofs (Etkileşimsiz Sıfır Bilgi Kanıtları)
-  - Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (Öz Kısa Etkileşimsiz Sıfır Bilgi Kanıtları)
-  - Zero-Knowledge Scalable Transparent Argument of Knowledge (Öz Kısa Etkileşimsiz Şeffaf Bilgi Kanıtları)
-### Zero Knowledge (Sıfır Bilgi Kanıtlarının) Kullanım ve Uygulama Alanları 
-### Zero Knowledge (Sıfır Bilgi Kanıtlarının) Zorlukları Nelerdir? 
-
-
 ## Zero Knowledge Proofs (Sıfır Bilgi Kanıtı) Nedir? 
 
 **Zero Knowledge (sıfır bilgi kanıtı)** kavramı, birisinin başka birine bir şeyi kanıtlaması gerektiğinde, kanıtlayan kişinin açıklamalarını, bilgi ve verilerini ifşa etmeden yapabileceği bir yöntemi ifade eder. Bu, güvenli ve gizli bilgi işlemlerinde, özellikle de kriptografi ve veri gizliliği konularında kullanılan bir tekniktir. Blockchain'de, zero knowledge protokolü, işlem gizliliği ve anonimliğini artırmak için kullanılır.
