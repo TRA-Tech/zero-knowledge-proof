@@ -162,9 +162,7 @@ zk-STARK hash fonksiyonu kullandığı ve güvenilmez bir kanıt modeli tercih e
 
 - **BLOCKCHAIN** 
 Bitcoin ve Ethereum gibi halka açık blokzincirlerinin şeffaflığı, işlemleri kamuya açık ve doğrulanmasını mümkün kılar. Ancak bu durum daha az mahremiyet anlamına gelir ve kullanıcıların anonimleştirilmesine yol açabilir. 
-Zero Knowledge bu bağlamda kamuya açık blok zincirlerine daha fazla gizlilik kazandırabilir. Örneğin, Zcash kripto para birimi, Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARK) adlı bir zero-knowledge yöntemine dayanmaktadır. Ayrıca Ethereum blok zincirinde kullanılan ve ölçeklenebilirlik ve gizlilik sağlayan Zero-Knowledge Scalable Transparent Argument of Knowledge (zk-STARK) yöntemidir.
-
-2018'de, Bulletproofs tanıtıldı. Bulletproofs, güvenilir kurulum gerektirmeyen etkileşimsiz sıfır bilgi kanıtından bir iyileştirme yapar.
+Zero Knowledge bu bağlamda kamuya açık blok zincirlerine daha fazla gizlilik kazandırabilir. Örneğin, Zcash kripto para birimi, Zero-Knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARK) adlı bir zero-knowledge yöntemine dayanmaktadır. Ayrıca Ethereum blok zincirinde kullanılan ve ölçeklenebilirlik ve gizlilik sağlayan Zero-Knowledge Scalable Transparent Argument of Knowledge (zk-STARK) yöntemidir. 2018'de, Bulletproofs tanıtıldı. Bulletproofs, güvenilir kurulum gerektirmeyen etkileşimsiz sıfır bilgi kanıtından bir iyileştirme yapar.
 
 - **FİNANS** 
 ING, müşterilerinin gizli numaralarını belirli bir aralıklarda doğruluğunu kanıtlayabilecekleri ZKPs yöntemi kullanıyor. Örnek vermek gerekirse, konut kredisi almak için başvuru yapan kişi net maaş bilgisini paylaşmadan kredi almaya uygun olduğunu kanıtlayabilir. 
