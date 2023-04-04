@@ -201,9 +201,7 @@ Zero Knowledge (Sıfır Bilgi) protokollerinde dikkat çeken ve üzerinde durulm
 - **NÜKLEER SİLAHSIZLANMA:** 
 Princeton Plazma Fizik Laboratuvarı ve Princeton Üniversitesi, 2016 yılında gelecekteki nükleer silahsızlanma görüşmeleri için uygulanabilirliği olabilecek bir yöntem oluşturdu. Nükleer Silahsızlanma çerçevesinde yer alabilecek her husus-muayene ekipleri, iç yapısı ve denetimi, gizlenmesi gereken nükleer silah olup olmadığını iç çalışmalar kayıt dışı kalarak ve paylaşım gereği olmadan, ortaya çıkarmadan tamamlayabilir.  
 
-- **VERİ GİZLİLİĞİ:**
-
-Zero Knowledge Proof, veri gizliliği için de kullanılabilir. Örneğin, bir kuruluşun bir kullanıcının kişisel bilgilerini doğrulaması gerekiyorsa, bu bilgilerin tamamını paylaşmak yerine, sadece doğrulamanın gerekli olduğu bilgileri paylaşabilir.
+- **VERİ GİZLİLİĞİ:** Zero Knowledge Proof, veri gizliliği için de kullanılabilir. Örneğin, bir kuruluşun bir kullanıcının kişisel bilgilerini doğrulaması gerekiyorsa, bu bilgilerin tamamını paylaşmak yerine, sadece doğrulamanın gerekli olduğu bilgileri paylaşabilir.
 
 
 ## Sıfır Bilgi Kanıtlarının Zorlukları Nelerdir? 
