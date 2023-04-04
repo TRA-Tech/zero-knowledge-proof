@@ -60,6 +60,7 @@ Sıfır bilgi kanıt protokolü, kanıtlayan ve kanıtı doğrulayan taraf aras�
 
 ## Zero Knowledge Soyut Örnek
 
+### Örnek 1:
 X kişisinin *renk körü* olduğunu ve *iki adet kırmızı ve yeşil renklerde topunuz* olduğunu düşünün. X kişisine göre toplar tamamen aynı renk görünüyor ancak topların ayırt edilebileceğinden şüpheleniyor. Bu kişiye topların farklı renklerde olduğunu kanıtlamak istiyorsunuz ancak topların hangisinin kırmızı hangisinin yeşil renk olduğunu açıklamak istemiyorsunuz. 
 
 İspat sistemi şu şekilde işliyor; X kişisi topları alıyor ve arkasına saklıyor. Sonrasında toplardan birini alıyor ve size gösteriyor. Daha sonrasında tekrardan arkasına saklıyor ve tekrardan bir topu gösteriyor. İki toptan birini seçme işlemi eşit olasılıkta gerçekleşiyor. Size sadece topu değiştirip değiştirmediğini sorar, tüm bu olay döngüsünü gerektiği sıklıkta tekrarlanabilir. 
@@ -72,6 +73,16 @@ Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğ
 - X kişisi ve siz, ispat işlemini birçok kez tekrarlarsanız, X kişisi topların gerçekten de farklı olduğuna ikna olacaktır. **(Bütünlük)**
 
 Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
+
+### Örnek 2:
+Bob, Alice'e bir sayı seçtiğini söyler ve bu sayının asal olduğunu kanıtlamak istediğini söyler. Ancak, Bob bu sayıyı açıklamak istemez. Alice, Bob'un iddiasını doğrulamak isteyebilir, ancak Bob'a güvenmez. Bu noktada, ZKP devreye girer.
+
+Bob, Alice'e asal sayının iki çarpanını seçtiğini söyler ve bu çarpanların toplamını verir. Daha sonra, Alice, Bob'un çarpanları seçtiği doğruluğunu kanıtlamasını isteyebilir. Bob, Alice'e çarpanların sayısını ve toplamını söyler, ancak çarpanların kendilerini ifşa etmez.
+
+Alice, Bob'un iddiasını doğrulamak istediğinde, ZKP kullanarak, Bob'un çarpanların gerçekten var olduğunu kanıtlamasını isteyebilir. Bob, ZKP kullanarak, çarpanların gerçekten var olduğunu ve toplamının asal sayıya eşit olduğunu doğrulayabilir, ancak asal sayının kendisini ifşa etmez.
+
+Bu senaryoda, ZKP, Bob'un iddiasının doğru olduğunu kanıtlamasına ve aynı zamanda asal sayıyı ifşa etmeden gizli tutmasına olanak tanır. Alice de Bob'un iddiasının doğruluğunu doğrulayabilir ve asal sayının kendisine açıklanmasını gerektirmeden bu kanıtı alabilir. Bu örnek, ZKP teknolojisinin nasıl kullanılabileceğini göstermektedir ve gizlilik ve güvenlik gerektiren uygulamalarda yaygın olarak kullanılmaktadır.
+
 
 ## Zero Knowledge Proof Nasıl Çalışır?
 Zero Knowledge Proof, kanıtın doğru olduğunu gösterirken, kanıtın içeriğini ortaya çıkarmadan gerçekleştirilen bir işlemdir. Bu işlem, üç aşamalı bir protokol aracılığıyla gerçekleştirilir.
