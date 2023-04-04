@@ -203,9 +203,9 @@ Princeton Plazma Fizik Laboratuvarı ve Princeton Üniversitesi, 2016 yılında 
 
 - **VERİ GİZLİLİĞİ:** Zero Knowledge Proof, veri gizliliği için de kullanılabilir. Örneğin, bir kuruluşun bir kullanıcının kişisel bilgilerini doğrulaması gerekiyorsa, bu bilgilerin tamamını paylaşmak yerine, sadece doğrulamanın gerekli olduğu bilgileri paylaşabilir.
 
-- **Parola Doğrulama:** Zero Knowledge Proofs, bir kullanıcının bir parola sahibi olduğunu kanıtlamasına yardımcı olabilir. Örneğin, bir kullanıcının bir web sitesine giriş yapmak için bir parolaya ihtiyacı varsa, ZKP, kullanıcının parolayı bildiğini doğrulayabilir ancak parolayı kendisi ifşa etmez.
+- **PAROLA DOĞRULAMA:** Zero Knowledge Proofs, bir kullanıcının bir parola sahibi olduğunu kanıtlamasına yardımcı olabilir. Örneğin, bir kullanıcının bir web sitesine giriş yapmak için bir parolaya ihtiyacı varsa, ZKP, kullanıcının parolayı bildiğini doğrulayabilir ancak parolayı kendisi ifşa etmez.
 
-- **Oylama Sistemi:** Zero Knowledge Proofs, oylama sistemlerinde kullanılabilir. Örneğin, bir oylama sistemine katılan bir kişi, oyunu verdiğini kanıtlamak istediğinde, ZKP kullanarak oyunun gerçekten verildiğini ancak oy verilen adayın kim olduğunu ifşa etmeden kanıtlayabilir.
+- **OYLAMA SİSTEMİ:** Zero Knowledge Proofs, oylama sistemlerinde kullanılabilir. Örneğin, bir oylama sistemine katılan bir kişi, oyunu verdiğini kanıtlamak istediğinde, ZKP kullanarak oyunun gerçekten verildiğini ancak oy verilen adayın kim olduğunu ifşa etmeden kanıtlayabilir.
 
 
 ## Sıfır Bilgi Kanıtlarının Zorlukları Nelerdir? 
