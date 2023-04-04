@@ -12,7 +12,10 @@ Sıfır bilgi kanıtı, bilgilerin sadece ispatlayan tarafından gizliliği koru
 Zero Knowledge; bir şeyin gerçeğini, o gerçeği nasıl bildiğinizi ya da o gerçeğe dair bildiğiniz şeyleri paylaşmadan doğrulamanıza olanak sağlar. Sıfır bilgi kanıtları, girdi verilerini “doğru” ya da “yanlış” olarak çıktı olarak sunan bir algoritmaya dayanır. 
 Sıfır bilgi kanıtı, her türlü verinin geçerliliğini kanıtlayabilir. Bu duruma kişisel veriler dahildir. 
 
+Örneğin, bir kişi bir odaya girmeden önce, kapının açılabilmesi için bir kimlik kartı kullanması gerektiğini varsayalım. Ancak bu kişi, kimlik kartında saklanan bilgileri paylaşmak istemiyor. Bu durumda, bir Zero Knowledge Proof kullanarak, kişi kimliğini doğrulayabilir, ancak kimlik kartındaki bilgileri paylaşmaz.
+
 ![image](https://user-images.githubusercontent.com/123966022/226602614-1dcd134d-0f47-4fe5-9006-9572d947da13.png)
+
 
 > Bunu daha somut bir şekilde düşünebiliriz; `C` olarak gösterilen bir programın iki girdisi olduğunu varsayalım: `C(x, w)`. Burada `x` halka açık olan girdi, `w` ise gizli şahit girdisidir. Programın çıktısı boolean yani ya `doğru` ya da `yanlış`. Amaç, belirli bir halka açık girdi `x` verildiğinde, ispatlayıcı bir gizli girdi `w` bildiğini ve `C(x,w) == true` olduğunu kanıtlamaktır.
 
@@ -69,6 +72,21 @@ Topların renklerine bakarak X kişisinin topları değiştirip değiştirmediğ
 - X kişisi ve siz, ispat işlemini birçok kez tekrarlarsanız, X kişisi topların gerçekten de farklı olduğuna ikna olacaktır. **(Bütünlük)**
 
 Bu ispat sıfır bilgidir, çünkü X kişisi hangi topun yeşil hangi topun kırmızı olduğunu asla öğrenemez ve topların nasıl ayırt edilebileceğine dair de hiçbir bilgi edinmemektedir. 
+
+## Zero Knowledge Proof Nasıl Çalışır?
+Zero Knowledge Proof, kanıtın doğru olduğunu gösterirken, kanıtın içeriğini ortaya çıkarmadan gerçekleştirilen bir işlemdir. Bu işlem, üç aşamalı bir protokol aracılığıyla gerçekleştirilir.
+
+- Adım 1: Commitment (Taahhüt)
+Bu aşamada, kanıtın doğru olduğunu göstermek için kullanılacak bilgiyi seçersiniz. Bu bilgi, mesela bir şifre, bir sayı ya da bir matematiksel ifade olabilir. Ancak bu bilgiyi doğrudan açıklamazsınız. Bunun yerine, bir taahhütte bulunursunuz, yani bu bilginin bir özetini oluşturursunuz. Bu özet, belirli bir matematiksel işlem kullanılarak elde edilir ve diğer tarafların bu özeti doğrulaması mümkündür.
+
+- Adım 2: Challenge (Zorluk)
+Bu aşamada, diğer taraflar tarafından gönderilen bir zorluk ile karşılaşırsınız. Bu zorluk, özetin doğruluğunu test etmek için kullanılır. Zorluk, özeti oluşturmak için kullanılan matematiksel işlem ile ilgilidir.
+
+- Adım 3: Response (Yanıt)
+Bu aşamada, zorluğu çözmek için gerekli olan bilgiyi kullanarak bir yanıt verirsiniz. Bu yanıt, özetin doğru olduğunu kanıtlar. Ancak bu yanıt, özeti oluşturan bilgiyi ortaya çıkarmaz.
+
+Bu üç aşama, kanıtın doğru olduğunu gösterirken, kanıtın içeriğini ortaya çıkarmadan gerçekleştirilir. Bu nedenle, Zero Knowledge Proof, güvenli ve gizli bir kanıt sunar.
+
 
 ## Zero Knowledge (Sıfır Bilgi Kanıtı) Türleri Nelerdir? 
 - Interactive Zero-Knowledge Proofs (Etkileşimli Sıfır Bilgi Kanıtları)
@@ -172,7 +190,7 @@ Zero Knowledge bu bağlamda kamuya açık blok zincirlerine daha fazla gizlilik 
 ING, müşterilerinin gizli numaralarını belirli bir aralıklarda doğruluğunu kanıtlayabilecekleri ZKPs yöntemi kullanıyor. Örnek vermek gerekirse, konut kredisi almak için başvuru yapan kişi net maaş bilgisini paylaşmadan kredi almaya uygun olduğunu kanıtlayabilir. 
 
 - **KİMLİK DOĞRULAMA:** 
-Sıfır bilgi kanıtı, şifre gibi gizli ve kişisel verileri değiştirmeden kullanıcıların kimlik bilgilerini doğrulamalarını sağlayabilir. 
+Sıfır bilgi kanıtı, şifre gibi gizli ve kişisel verileri değiştirmeden kullanıcıların kimlik bilgilerini doğrulamalarını sağlayabilir. Örneğin, bir kullanıcının bir web sitesine giriş yapabilmesi için kullanıcı adı ve şifre gibi bilgileri paylaşması gerekir. Ancak, siz bu bilgileri paylaşmak istemiyorsunuz. Bunun yerine, Zero Knowledge Proof kullanarak, kullanıcı kimliğini doğrulayabilir, ancak kimliğindeki bilgileri paylaşmadan giriş yapabilir.
 
 - **MAKİNE ÖĞRENİMİ:**
 ZKP'ler, bir makine öğrenimi algoritmasının sahibinin model hakkında herhangi bir bilgi açıklamadan diğerlerine model sonuçları hakkında ikna etmesine olanak tanıyabilir.
@@ -182,6 +200,9 @@ Zero Knowledge (Sıfır Bilgi) protokollerinde dikkat çeken ve üzerinde durulm
 
 - **NÜKLEER SİLAHSIZLANMA:** 
 Princeton Plazma Fizik Laboratuvarı ve Princeton Üniversitesi, 2016 yılında gelecekteki nükleer silahsızlanma görüşmeleri için uygulanabilirliği olabilecek bir yöntem oluşturdu. Nükleer Silahsızlanma çerçevesinde yer alabilecek her husus-muayene ekipleri, iç yapısı ve denetimi, gizlenmesi gereken nükleer silah olup olmadığını iç çalışmalar kayıt dışı kalarak ve paylaşım gereği olmadan, ortaya çıkarmadan tamamlayabilir.  
+
+- **Veri Gizliliği**
+Zero Knowledge Proof, veri gizliliği için de kullanılabilir. Örneğin, bir kuruluşun bir kullanıcının kişisel bilgilerini doğrulaması gerekiyorsa, bu bilgilerin tamamını paylaşmak yerine, sadece doğrulamanın gerekli olduğu bilgileri paylaşabilir.
 
 
 ## Sıfır Bilgi Kanıtlarının Zorlukları Nelerdir? 
